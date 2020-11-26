@@ -7,6 +7,7 @@ public interface ILife {
 
     // Methoden zum Abfragen der aktuellen Situation
     public boolean isAlive(int x, int y);
+    public boolean isDead(int x, int y);
 
     // Methoden zum Fortschreiben der Generationen
     public ILife nextGeneration();
