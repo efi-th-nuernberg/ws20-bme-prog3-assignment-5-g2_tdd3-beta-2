@@ -49,7 +49,7 @@ public class Life implements ILife {
 
   @Override
   public void setDead(int x, int y) {
-    cells[x][y] = CellValue.Alive;
+    cells[x][y] = CellValue.Dead;
   }
 
   @Override
@@ -100,7 +100,7 @@ public class Life implements ILife {
   public int calculateNeighborsAlive( int x, int y) {
     int minX = x-1;
     int maxX = x+1;
-    int minY = x-1;
+    int minY = y-1;
     int maxY = y+1;
 
     if( minX < 0) minX = 0;
